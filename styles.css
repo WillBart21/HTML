@@ -1,8 +1,262 @@
-.fundo{
-    background-color: rgb(235, 215, 215);
+/* Menu de navegação */
+html{
+	scroll-behavior:smooth;
+ }
+/* importação da font*/
+ @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+	background-color: #fff;
+	color: #000;
+	font-family: 'Inria Sans', sans-serif;
 }
 
-.imgCarrossel{
-    width: 100%;
-    height: 500px;
+  .datetime {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .buttons{
+	margin-left: 90%;
+	display: inline-flex;
+  }
+
+.navegaçao {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
 }
+.sections{
+	padding:0 100px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ 
+nav {
+    background-color: rgb(0, 70, 41);
+    text-align: center;
+    padding: 20px 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 70, 41);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/* Sessão sobre a fome */
+#texto_desafios{
+	width:55%;
+	text-align: center;
+	background-color:#e9e9e9;
+	color:#3f3f3f;
+ 	font-family:sans-serif;
+  	padding-top:2vw;
+  	margin-left:2vw; 
+  	margin-right: 3vw;
+}
+
+#h3{
+	margin-top: 10%; 
+	margin-left: 2vw;
+	 margin-right: 3vw;
+}
+/* explicação sobre a plataforma */
+#sobre_explicacao{
+	background-color: #32D285;
+	width:95%;
+}
+
+
+#sobre_mais{
+	color:white;
+	width: 35%;
+	background-color: #555555;
+	border-radius:15px;
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-right: 45%;
+	align-items: left;
+}
+#beneficios{
+	color:white;
+	width: 35%;
+	background-color: #555555;
+	border-radius:15px;
+	text-align: left;
+	margin-top: 10vh;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-right: -50%;
+	align-items: left;
+}
+
+/* sessão sobre Tecnologias */
+#tecnologias{
+	background-color:#e9e9e9;
+	color:#3f3f3f;
+	font-family:sans-serif;
+    width: 35%;
+	border-radius:15px;
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	align-items: left;
+	margin-top: 10vh;
+}
+
+/*Sessão objetivos*/ 
+#ObjetivoTexto{
+	height:auto;
+	max-width: 52%;
+	padding: 10px;
+	background-color: #32D285;
+	border-radius: 4vh;
+	color: azure;
+}
+
+.objetivo-inline{
+	display:inline-flex;
+}
+
+.objetivoPad{
+	padding:25px;
+}
+
+#imgODS{
+	height: 30%;
+	width: 30%;
+}
+
+
+/* Sessão sobre contatos */
+#contatoMembros{
+	margin-left: 6vw;
+}
+span{
+	color: red;
+	
+}
+
+#inscrever{
+	margin-bottom:5%;
+	width:50vw;
+	height:35%;
+	margin-top:1%;
+	padding:1.302vw;
+	color:#FFFFFF;
+	background-color:#32D285;
+	font-size:1.6vw;
+  }
+  #botao-enviar{
+	background-color:#FFFFFF;
+	border-radius:7px;
+	width:5vw;
+	height:3vw;
+	border:0;
+	font-size:1vw;
+	font-family:Arial;
+  }
+  #botao-enviar:hover{
+	background-color:#b5b5b5;
+  }
+  #name{
+	width:28.5vw;
+	height:2.0vw;
+	font-size:0.90vw;
+  }
+  .nome{
+	margin-right:2,75vw;
+  }
+  #email{
+	width:28.5vw;
+	height:2.0vw;
+	font-size:0.90vw;
+  }
+  .mail{
+	margin-right:2,75vw;
+  }
+  #telefone{
+	width:28.5vw;
+	height:2.0vw;
+	margin-right:1.95vw;
+	font-size:0.90vw;
+  }
+  .Telefone{
+	margin-right:2,75vw;
+  }
+  #msg{
+	width:28.5vw;
+	height:10.36vw;
+	font-size:1.0vw;
+	margin-left:5.45vw;
+	}
+
+	#subirTopo {
+		text-decoration: none;
+		background: #375252;
+		bottom: 1.563vw;
+		right: 1.563vw;
+		color: #ffffff;
+		text-align: center;
+		cursor: pointer;
+		padding: 0.781vw;
+		font-size: 0.781vw;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: fixed;
+		border: 0;
+		font-family: 'Inria Sans', sans-serif;
+		opacity: .8;
+	}
+	#subirTopo:hover {
+		opacity:1;
+	}
+
+	footer{
+		background-color: rgb(0, 70, 41);
+		min-height:14vh;
+		align-items: center;
+		text-align: center;
+		padding:10px;
+        display:flex;
+        flex-direction: row;
+	}
